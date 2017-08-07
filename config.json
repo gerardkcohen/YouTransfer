@@ -2,11 +2,11 @@
 	"PORT": 5000,
 
 	"general": {
-		"title": "YouTransfer",
-		"subtitle": "The self-hosted file sharing solution",
-		"baseUrl": "http://localhost:5000",
+		"title": "Crystal Tamar - File Shaare",
+		"subtitle": "Share files with Crystal Tamar",
+		"baseUrl": "https://crystaltamar.com/transfer",
 		"cleanupSchedule": "*/1 * * * *",
-		"schedulerEnabled": false,
+		"schedulerEnabled": true,
 		"enableDownload": true
 	},
 

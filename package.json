@@ -2,11 +2,10 @@
   "name": "youtransfer",
   "version": "1.0.6",
   "description": "YouTransfer, the self-hosted file transfer solution",
-  "author": "YouTransfer <info@youtransfer.io>",
-  "contributors": [{
-    "name": "Remie Bolte",
-    "email": "info@youtransfer.io"
-  }],
+  "author": "Collabsoft",
+  "contributors": [
+    "Remie Bolte <info@youtransfer.io>"
+  ],
   "main": "app.js",
   "engines": {
     "node": ">=0.12.x"
@@ -54,7 +53,6 @@
     "app": "node app.js",
     "test": "gulp test"
   },
-  "author": "Collabsoft",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
@@ -101,5 +99,10 @@
     "vinyl-paths": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   },
-  "bin": "./bin/youtransfer"
+  "bin": {
+    "youtransfer": "./bin/youtransfer"
+  },
+  "directories": {
+    "test": "test"
+  }
 }

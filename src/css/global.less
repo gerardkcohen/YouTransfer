@@ -1,11 +1,23 @@
 
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+	font-size: 1em !important;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
 	background-color: #000000;
-	background-image: url("../assets/204H.jpg");
+	background-image: url("../assets/bio.jpg");
 	background-position: 0 0;
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-attachment: fixed;
+  background-size: cover;
 	font-family: "kulturista-web";
+	font-size: inherit !important;
+	margin: 1vw;
 }
 
 /*// ------------------------------------------------------------------------------------------ Header */
@@ -23,3 +35,18 @@ nav.navbar.navbar-inverse {
 nav.navbar .navbar-brand {
 	font-size: 10px;
 }
+
+footer {
+	color: #fff;
+	font-size: 1.25rem;
+}
+
+footer a {
+	color: inherit;
+	text-shadow: 2px 2px 2px #000;
+}
+
+footer a:hover {
+	color: #e91e99;
+}
+

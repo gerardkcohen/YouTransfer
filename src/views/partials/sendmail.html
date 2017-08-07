@@ -1,19 +1,21 @@
 <div class="dz-upload-complete {{ "hidden" if not (success and isPostback) }}">
-	<h2>Email a friend!</h2>
-	<form class="form form-group-sm" action="/send" method="POST">
+<br>
+	<svg xmlns="http://www.w3.org/2000/svg" style="width: 50%" viewBox="0 0 50 50"><circle cx="25" cy="25" r="25" fill="#25AE88"/><path fill="none" stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M38 15L22 33l-10-8"/></svg>
+	<h2>Email to a friend!</h2>
+	<form class="form" action="/send" method="POST">
 		{% if isPostback %}
 		<input type="hidden" name="bundle" value="{{ bundle.id }}" />
 		{% endif %}
 		<div class="form-group">
-			<input type="text" id="from" name="email[from]" class="form-control" placeholder="Your email">
+			<input type="text" id="from" aria-label="your email address" name="email[from]" class="form-control" placeholder="Your email">
 		</div>
 
 		<div class="form-group">
-			<input type="text" id="to" name="email[to]" class="form-control" placeholder="Your friend's email">
+			<input type="text" aria-label="Your friend's email" id="to" name="email[to]" class="form-control" placeholder="Your friend's email">
 		</div>
 
 		<div class="form-group">
-			<textarea placeholder="Message" name="email[body]" class="form-control" rows="5"></textarea>
+			<textarea aria-label="Message" placeholder="Message" name="email[body]" class="form-control" rows="5"></textarea>
 		</div>
 
 		<div class="form-group">

@@ -1,11 +1,21 @@
 
 /*// ------------------------------------------------------------------------------------------ Homepage */
 
+header h1,
+header h2 {
+	color: #fff;
+	text-shadow: 2px 2px 2px #000;
+}
+
 .hp {
-	position: relative;
-	margin: 40px 5px 80px 5px;
+	color: #000;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 80px 0;
 	min-height: 450px;
-	background-color: #fff;
+	background-color: rgba(255,255,255,0.9);
+	width: 20rem;
 }
 
 .hp::after,
@@ -23,9 +33,9 @@
 }
 
 .hp .profile {
-	position: absolute; 
-	top: 20px; 
-	right: 20px; 
+	position: absolute;
+	top: 20px;
+	right: 20px;
 }
 
 .hp .profile.dropdown {
@@ -42,9 +52,9 @@
 }
 
 .hp .profile img {
-	border: 0.5px solid #ccc; 
-	height: 64px; 
-	width: 64px; 
+	border: 0.5px solid #ccc;
+	height: 64px;
+	width: 64px;
 	border-radius: 50px;
 }
 
@@ -52,20 +62,9 @@
 	left: -94px;
 }
 
-@media (min-width: @screen-md-min) {
-	.hp.jumbotron {
-		padding: 40px 80px;
-	}
-}
+.hp.jumbotron {
+	padding: 1rem;
 
-@media (max-width: @screen-xs-min) {
-	.hp.jumbotron {
-		padding: 20px;
-	}
-}
-
-.hp .dropzone {
-	margin-top: 20px;
 }
 
 .hp .dz-preview-template {
