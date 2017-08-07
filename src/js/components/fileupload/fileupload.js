@@ -112,7 +112,7 @@ function Fileupload(element) {
 								 .append('<input type="hidden" name="bundle" value="' + component.bundle.id + '" />');
 					});
 				} else {
-					component.$completedContainer.html('<br /><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" style="width: 50%"><circle cx="25" cy="25" r="25" fill="#D75A4A"/><path fill="none" stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M16 34l9-9 9-9M16 16l9 9 9 9"/></svg><p class="text-danger">Oh my... something went wrong while transferring your files. Please try again later.</p><a href="/" data-async data-target="hp">Return to homepage</a>');
+					component.$completedContainer.html('<br /><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" style="width: 50%"><circle cx="25" cy="25" r="25" fill="#D75A4A"/><path fill="none" stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M16 34l9-9 9-9M16 16l9 9 9 9"/></svg><p class="text-danger">Oh my... something went wrong while transferring your files. Please try again later.</p><a href="/transfer/" data-async data-target="hp">Return to homepage</a>');
 				}
 
 				component.dropzone.disable();
